@@ -68,3 +68,40 @@
 
 <img width="224" height="224" alt="image" src="https://github.com/user-attachments/assets/b810a95f-6bef-4ff4-b364-f5023baaf205" />
 
+
+
+---
+
+##  Konsep OOP yang Diterapkan
+
+### 1. **Abstraction**
+- **`Kendaraan`** → dibuat sebagai `abstract class` yang tidak bisa di-*instance* langsung, hanya bisa diturunkan ke `Mobil` dan `Motor`.
+
+  <img width="732" height="158" alt="image" src="https://github.com/user-attachments/assets/22b71637-e44b-4dc6-9075-5dcef4f4c7da" />
+
+
+ Abstraction digunakan untuk membuat *blueprint* umum yang harus diimplementasikan oleh subclass / class turunan.
+
+---
+
+### 2. **Polymorphism**
+
+#### a. **Overriding**
+- Method `getInfo()` pada class `Mobil` dan `Motor` **menimpa (override)** method abstract `getInfo()` dari `Kendaraan`.
+
+<img width="664" height="128" alt="image" src="https://github.com/user-attachments/assets/08b30b9a-a054-449a-9482-8d217151f919" />
+
+
+- Dengan ini, setiap objek `Mobil` dan `Motor` bisa menampilkan informasi sesuai jenisnya.
+
+  <img width="1147" height="144" alt="image" src="https://github.com/user-attachments/assets/342712c5-6ac8-4495-8092-6e8e77c38c8e" />
+
+  <img width="1031" height="131" alt="image" src="https://github.com/user-attachments/assets/3ca27062-6625-4c45-baa0-0baef95f0f4e" />
+
+
+
+#### b. **Overloading**
+- Pada `KendaraanService`, terdapat dua method dengan nama sama tapi parameter berbeda:
+  
+<img width="823" height="620" alt="image" src="https://github.com/user-attachments/assets/73d07507-17fe-420a-8583-fee2f8eac8a0" />
+
